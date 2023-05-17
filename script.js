@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const result = JSON.parse(data);
             if (result.code == 1) {
                 form.classList.add('hidden');
+                error.classList.add('hidden');
                 success.classList.remove('hidden');
                 setCookie('user', JSON.stringify(result.user));
                 setTimeout(() => {
